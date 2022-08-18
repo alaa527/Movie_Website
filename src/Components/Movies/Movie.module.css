@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Montserrat:wght@300&display=swap');
+
+.MovieStyle h2{
+    text-align: center;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: relative;
+    padding-top: 20px;
+}
+
+.MovieStyle h2::before{
+content:'';
+position: absolute;
+left:50%;
+bottom: -20px;
+transform: translateX(-50%);
+height: 2px;
+background-color: #dc3545;
+width: 100px;
+}
+.MovieStyle h2::after{
+  content:'';
+  position: absolute;
+  left:50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  height: 14px;
+  background-color:#212529 ;
+  width: 14px;
+  border-radius: 50%;
+  border: #dc3545 solid 2px;
+  }
+ .movie_card{
+    background-color: white;
+    border: solid 1px white;
+
+    min-height: 520px;
+    text-align: center;
+    overflow: hidden;
+   position: relative;
+     
+ }
+ .movie_card h5{
+   font-family: 'Edu NSW ACT Foundation', cursive;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   color: #212529;
+ }
+ 
+ .movie_card .carttitle{
+min-height: 60px;
+
+ }
+ 
+ .movie_card button a{
+color: white;
+text-decoration: none;
+ }
+ .movie_card div{
+    overflow: hidden;
+ }
+ .movie_card img{
+    transition: transform 1s;
+  
+  
+ }
+ .movie_card:hover img{
+    transform: scale(1.5);
+  
+ }
+select{
+
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+
+ .loading {
+    text-align: center;
+  }
+.searchTerm{
+    width: 90%;
+    
+}
+.searchButton{
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
