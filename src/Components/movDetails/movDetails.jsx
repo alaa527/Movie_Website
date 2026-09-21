@@ -15,7 +15,7 @@ function MovieDetail() {
   const fetchDataById = async () => {
     const { data } =await axios.get('https://api.themoviedb.org/3/trending/all/day?api_key=a808cb8534878926957f187cbee4fd21')
 const alldata=Array.from(data.results);
-const filteredProject = alldata.find((p) => p.id == id)
+const filteredProject = alldata.find((p) => p.id === id)
 setMovieById(filteredProject);
   };
   useEffect(() => {
